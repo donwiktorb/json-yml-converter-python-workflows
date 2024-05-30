@@ -31,8 +31,8 @@ jobs:
         run: |
           pyinstaller --onefile --noconsole task7.py
 
-      - name: upload
-        uses: actions/upload-artifact@v2
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
         with:
           name: executable
           path: dist/project.exe
